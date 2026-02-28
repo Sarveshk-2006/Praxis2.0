@@ -46,7 +46,6 @@ body {
   color: var(--text-primary);
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
-  cursor: none;
 }
 
 /* Grain texture overlay on body */
@@ -167,12 +166,17 @@ button.btn-primary:hover {
 @keyframes blink {
 
   0%,
-  100% {
+  49% {
     opacity: 1;
   }
 
-  50% {
+  50%,
+  99% {
     opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 

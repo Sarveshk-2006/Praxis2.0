@@ -12,7 +12,7 @@ export default function Navbar() {
                     backgroundColor: '#2DD4BF',
                     marginLeft: '4px',
                     verticalAlign: 'middle',
-                    animation: 'blink 1s step-end infinite'
+                    animation: 'blink 1s infinite'
                 }} />
             </div>
 
