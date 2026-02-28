@@ -1,6 +1,6 @@
 {
     "Dormant Customers": {
-        "satisfaction_score": 3.211087420042644,
+        "satisfaction_score": 2.8272921108742004,
         "most_loved_item": "Hat",
         "most_complained_item": "Boots",
         "rating_trend_by_frequency": {
@@ -14,7 +14,7 @@
         }
     },
     "Loyal Deal Seekers": {
-        "satisfaction_score": 3.247983870967742,
+        "satisfaction_score": 2.930443548387097,
         "most_loved_item": "Dress",
         "most_complained_item": "T-shirt",
         "rating_trend_by_frequency": {
@@ -28,7 +28,7 @@
         }
     },
     "Power Shoppers": {
-        "satisfaction_score": 4.449685534591195,
+        "satisfaction_score": 4.827044025157233,
         "most_loved_item": "Backpack",
         "most_complained_item": "Coat",
         "rating_trend_by_frequency": {
@@ -42,7 +42,7 @@
         }
     },
     "Casual Browsers": {
-        "satisfaction_score": 4.399606299212598,
+        "satisfaction_score": 4.827755905511811,
         "most_loved_item": "Boots",
         "most_complained_item": "Sneakers",
         "rating_trend_by_frequency": {

@@ -1,5 +1,13 @@
 :root {
   --base: #0F0E0C;
+
+  .page-container {
+    padding-top: 80px;
+    padding-left: 48px;
+    padding-right: 48px;
+    min-height: 100vh;
+  }
+
   --surface: #161513;
   --surface-2: #1C1A17;
   --border: rgba(255, 255, 255, 0.07);
@@ -16,7 +24,7 @@
   --segment-power: #2DD4BF;
   --segment-loyal: #818CF8;
   --segment-casual: #FB923C;
-  --segment-dormant: #44403C;
+  --segment-dormant: #6B7280;
 
   --positive: #34D399;
   --negative: #F87171;

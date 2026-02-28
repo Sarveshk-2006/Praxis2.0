@@ -17,10 +17,10 @@ def run():
 
     # 1. RATING SENTIMENT CLASSIFICATION
     def classify_sentiment(rating):
-        if rating >= 4.5: return "Delighted"
+        if rating >= 4.0: return "Delighted"
         if rating >= 3.5: return "Satisfied"
-        if rating >= 2.5: return "Neutral"
-        if rating >= 1.5: return "Dissatisfied"
+        if rating >= 3.0: return "Neutral"
+        if rating >= 2.5: return "Dissatisfied"
         return "Frustrated"
         
     df['Sentiment'] = df['Review Rating'].apply(classify_sentiment)

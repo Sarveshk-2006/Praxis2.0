@@ -2,7 +2,7 @@ export const SEGMENT_COLORS = {
     'Power Shoppers': '#2DD4BF', // teal
     'Loyal Deal Seekers': '#818CF8', // indigo
     'Casual Browsers': '#FB923C', // orange
-    'Dormant Customers': '#44403C', // stone
+    'Dormant Customers': '#6B7280', // stone
 };
 
 export const getSegmentColor = (name) => {
@@ -20,6 +20,6 @@ export const getSegmentHexClass = (name) => {
     if (name.includes('Power Shoppers')) return 'bg-[#2DD4BF]';
     if (name.includes('Loyal Deal Seekers')) return 'bg-[#818CF8]';
     if (name.includes('Casual Browsers')) return 'bg-[#FB923C]';
-    if (name.includes('Dormant Customers')) return 'bg-[#44403C]';
+    if (name.includes('Dormant Customers')) return 'bg-[#6B7280]';
     return 'bg-[#2DD4BF]';
 };

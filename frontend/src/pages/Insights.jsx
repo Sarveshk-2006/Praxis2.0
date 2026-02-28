@@ -70,7 +70,7 @@ export default function Insights() {
     const discountEffectText = biggestMover ? `Discounts ${biggestMover.diff > 0 ? 'help' : 'hurt'} satisfaction most for ${biggestMover.category} customers (${biggestMover.diff > 0 ? '+' : ''}${biggestMover.diff.toFixed(2)}★)` : "Discount effects are neutral across categories";
 
     return (
-        <div className="page max-w-[1400px] space-y-10 pt-[72px] animate-in fade-in duration-500 pb-16">
+        <div className="page page-container max-w-[1400px] space-y-10 animate-in fade-in duration-500 pb-16">
 
             <div className="border-b border-[rgba(255,255,255,0.07)] pb-6">
                 <h2 className="heading text-4xl font-black text-[#F5F0E8] flex items-center">
@@ -125,7 +125,7 @@ export default function Insights() {
                                     </div>
                                     <div className="text-right">
                                         <span className="block text-[#F87171] font-mono font-medium text-[18px]">{item.dissatisfied_pct.toFixed(0)}%</span>
-                                        <span className="font-mono text-[9px] tracking-[0.15em] uppercase text-[#F87171]">NEGATIVE</span>
+                                        <span className="font-mono text-[9px] tracking-[0.15em] uppercase text-[#F87171]">DISSATISFIED</span>
                                     </div>
                                 </div>
                             ))}

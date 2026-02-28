@@ -153,7 +153,7 @@ export default function Intelligence() {
     };
 
     return (
-        <div className="page max-w-[1400px] space-y-12 animate-in fade-in duration-500 pb-16">
+        <div className="page page-container max-w-[1400px] space-y-12 animate-in fade-in duration-500 pb-16">
 
             <div className="border-b border-[rgba(255,255,255,0.07)] pb-6 flex justify-between items-end">
                 <div>

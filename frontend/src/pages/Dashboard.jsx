@@ -160,7 +160,7 @@ export default function Dashboard() {
     };
 
     return (
-        <div className="page absolute inset-0 bg-base overflow-x-hidden flex flex-col justify-between">
+        <div className="page page-container absolute inset-0 bg-base overflow-x-hidden flex flex-col justify-between">
             <style>{`
                 @keyframes ticker {
                     0% { transform: translateX(100vw); }
@@ -239,7 +239,7 @@ export default function Dashboard() {
                     <div className="w-full h-[300px] relative">
                         <div className="label mb-8">REVENUE BY SEASON</div>
                         <ResponsiveContainer width="100%" height="100%">
-                            <BarChart data={data.season_revenue} margin={{ top: 0, right: 0, bottom: 0, left: -20 }}>
+                            <BarChart data={data.season_revenue} margin={{ top: 10, right: 20, bottom: 30, left: 10 }}>
                                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.07)" vertical={false} />
                                 <XAxis dataKey="season" stroke="#8A8480" tickLine={false} axisLine={false} tick={{ fontFamily: 'DM Mono', fontSize: 10, fill: '#8A8480' }} dy={10} />
                                 <RechartsTooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.02)' }} />

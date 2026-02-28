@@ -95,7 +95,7 @@ export default function Affinity() {
     const heatSegments = data.segmentCat ? Object.keys(data.segmentCat) : [];
 
     return (
-        <div className="absolute inset-0 bg-base overflow-x-hidden flex flex-col justify-start">
+        <div className="page page-container absolute inset-0 bg-base overflow-x-hidden flex flex-col justify-start">
             <div className="px-12 pt-12 pb-24 w-full max-w-[1500px] mx-auto animate-in space-y-12">
 
                 {/* HEADLINE & TABS */}

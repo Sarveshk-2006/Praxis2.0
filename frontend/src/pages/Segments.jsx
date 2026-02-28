@@ -94,7 +94,7 @@ export default function Segments() {
     };
 
     return (
-        <div className="page absolute inset-0 bg-base overflow-x-hidden flex flex-col justify-start">
+        <div className="page page-container absolute inset-0 bg-base overflow-x-hidden flex flex-col justify-start">
             <div className="px-12 pt-12 pb-24 w-full max-w-[1500px] mx-auto space-y-20 animate-in">
 
                 {/* HEADLINE SECTION AND LOOKUP */}
@@ -120,7 +120,7 @@ export default function Segments() {
                                     type="number"
                                     min="1" max="3900"
                                     placeholder="42"
-                                    className="w-full bg-base border border-border px-3 py-2 text-[#2DD4BF] font-mono text-[14px] focus:outline-none focus:border-[#2DD4BF] transition-colors"
+                                    className="w-full bg-[#161513] border border-[rgba(255,255,255,0.1)] px-[14px] py-[10px] text-[#F0EDE8] font-mono text-[14px] rounded-none focus:outline-none focus:border-[rgba(45,212,191,0.4)] transition-colors"
                                     value={lookupId}
                                     onChange={e => setLookupId(e.target.value)}
                                 />
@@ -128,7 +128,7 @@ export default function Segments() {
                             <button
                                 type="submit"
                                 disabled={lookupLoading}
-                                className="bg-white/5 hover:bg-white/10 text-offwhite px-4 py-2 font-mono text-[12px] h-[38px] transition-colors flex items-center border border-border"
+                                className="bg-transparent hover:bg-[rgba(45,212,191,0.08)] text-[#2DD4BF] px-[20px] py-[10px] font-mono text-[11px] tracking-[0.12em] uppercase h-[42px] transition-colors flex items-center justify-center border border-[rgba(45,212,191,0.4)] rounded-none"
                             >
                                 {lookupLoading ? '...' : 'ANALYZE'}
                             </button>

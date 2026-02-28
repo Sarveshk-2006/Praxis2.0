@@ -8,7 +8,7 @@ import Intelligence from './pages/Intelligence';
 import Insights from './pages/Insights';
 import { useState, useEffect } from 'react';
 import { Activity, Database, GitBranch, CheckCircle2 } from 'lucide-react';
-import CustomCursor from './components/CustomCursor';
+
 
 function App() {
   const [appInitializing, setAppInitializing] = useState(true);
@@ -93,7 +93,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="flex flex-col min-h-screen bg-base text-offwhite font-sans relative">
-        <CustomCursor />
+
         <Navbar />
         <main className="flex-1 p-8 overflow-y-auto w-full z-0 relative">
           <Routes>
