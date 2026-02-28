@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import axios from 'axios';
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer } from 'recharts';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { X, AlertCircle } from 'lucide-react';
@@ -7,7 +6,7 @@ import AnimatedNumber from '../components/AnimatedNumber';
 import Loader from '../components/Loader';
 import { SEGMENT_COLORS } from '../constants/segments';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const BASE = import.meta.env.VITE_API_URL;
 
 const CAT_COLORS = {
     'Clothing': '#2DD4BF',
@@ -37,8 +36,9 @@ export default function Dashboard() {
         setLoading(true);
         setError('');
         try {
-            const res = await axios.get(`${API_URL}/api/stats`);
-            setData(res.data);
+            const res = await fetch(`${BASE}/api/stats`);
+            const json = await res.json();
+            setData(json);
         } catch (err) {
             console.error("Error fetching dashboard data:", err);
             setError('Unable to connect to server.');
@@ -62,8 +62,9 @@ export default function Dashboard() {
         setUploadStatus(null);
 
         try {
-            await axios.post(`${API_URL}/api/upload`, formData, {
-                headers: { 'Content-Type': 'multipart/form-data' }
+            await fetch(`${BASE}/api/upload`, {
+                method: 'POST',
+                body: formData
             });
             setUploadStatus('success');
             fetchData();

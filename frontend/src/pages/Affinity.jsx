@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, Cell } from 'recharts';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const BASE = import.meta.env.VITE_API_URL;
 
 export default function Affinity() {
     const [activeTab, setActiveTab] = useState('heatmap');
@@ -23,14 +22,14 @@ export default function Affinity() {
         setError('');
         try {
             const [segCatRes, demoRes, priceRes] = await Promise.all([
-                axios.get(`${API_URL}/api/affinity/segment-category`),
-                axios.get(`${API_URL}/api/affinity/demographic`),
-                axios.get(`${API_URL}/api/price-sensitivity`)
+                fetch(`${BASE}/api/affinity/segment-category`).then(r => r.json()),
+                fetch(`${BASE}/api/affinity/demographic`).then(r => r.json()),
+                fetch(`${BASE}/api/price-sensitivity`).then(r => r.json())
             ]);
             setData({
-                segmentCat: segCatRes.data,
-                demographic: demoRes.data,
-                priceSen: priceRes.data
+                segmentCat: segCatRes,
+                demographic: demoRes,
+                priceSen: priceRes
             });
         } catch (err) {
             console.error(err);

@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, Cell, BarChart, Bar, Legend } from 'recharts';
 import { AlertCircle, Target, TrendingUp, RefreshCw, HandCoins, Lightbulb, Route, LineChart, SunSnow, Download } from 'lucide-react';
 import Loader from '../components/Loader';
 import { getSegmentColor, getSegmentHexClass } from '../constants/segments';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const BASE = import.meta.env.VITE_API_URL;
 
 export default function Intelligence() {
     const [loading, setLoading] = useState(true);
@@ -33,27 +32,27 @@ export default function Intelligence() {
         setError('');
         try {
             const [p1, p2, p3, p4, chartRes, journeyRes, priceRes, seasonalRes] = await Promise.all([
-                axios.get(`${API_URL}/api/segment-profile?segment=Power Shoppers`),
-                axios.get(`${API_URL}/api/segment-profile?segment=Loyal Deal Seekers`),
-                axios.get(`${API_URL}/api/segment-profile?segment=Casual Browsers`),
-                axios.get(`${API_URL}/api/segment-profile?segment=Dormant Customers`),
-                axios.get(`${API_URL}/api/intelligence-charts`),
-                axios.get(`${API_URL}/api/patterns/journey`),
-                axios.get(`${API_URL}/api/patterns/price-personas`),
-                axios.get(`${API_URL}/api/patterns/seasonal`)
+                fetch(`${BASE}/api/segment-profile?segment=Power Shoppers`).then(r => r.json()),
+                fetch(`${BASE}/api/segment-profile?segment=Loyal Deal Seekers`).then(r => r.json()),
+                fetch(`${BASE}/api/segment-profile?segment=Casual Browsers`).then(r => r.json()),
+                fetch(`${BASE}/api/segment-profile?segment=Dormant Customers`).then(r => r.json()),
+                fetch(`${BASE}/api/intelligence-charts`).then(r => r.json()),
+                fetch(`${BASE}/api/patterns/journey`).then(r => r.json()),
+                fetch(`${BASE}/api/patterns/price-personas`).then(r => r.json()),
+                fetch(`${BASE}/api/patterns/seasonal`).then(r => r.json())
             ]);
 
             setData({
                 profiles: {
-                    'Power Shoppers': p1.data,
-                    'Loyal Deal Seekers': p2.data,
-                    'Casual Browsers': p3.data,
-                    'Dormant Customers': p4.data
+                    'Power Shoppers': p1,
+                    'Loyal Deal Seekers': p2,
+                    'Casual Browsers': p3,
+                    'Dormant Customers': p4
                 },
-                charts: chartRes.data,
-                journey: journeyRes.data,
-                pricePersonas: priceRes.data,
-                seasonal: seasonalRes.data
+                charts: chartRes,
+                journey: journeyRes,
+                pricePersonas: priceRes,
+                seasonal: seasonalRes
             });
         } catch (err) {
             console.error(err);

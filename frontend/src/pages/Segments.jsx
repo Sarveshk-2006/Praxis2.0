@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, Cell, Legend } from 'recharts';
 import { Activity } from 'lucide-react';
 import AnimatedNumber from '../components/AnimatedNumber';
 import Loader from '../components/Loader';
 import { getSegmentColor, getSegmentHexClass } from '../constants/segments';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const BASE = import.meta.env.VITE_API_URL;
 
 export default function Segments() {
     const [data, setData] = useState(null);
@@ -26,9 +25,10 @@ export default function Segments() {
     const fetchSegments = () => {
         setLoading(true);
         setError('');
-        axios.get(`${API_URL}/api/segments`)
-            .then(res => {
-                setData(res.data);
+        fetch(`${BASE}/api/segments`)
+            .then(res => res.json())
+            .then(data => {
+                setData(data);
             })
             .catch(err => {
                 console.error("Error fetching segments:", err);
@@ -47,8 +47,13 @@ export default function Segments() {
         setExplainerData(null);
 
         try {
-            const res = await axios.get(`${API_URL}/api/explain/customer?id=${lookupId}`);
-            setExplainerData(res.data);
+            const res = await fetch(`${BASE}/api/explain/customer?id=${lookupId}`);
+            if (!res.ok) {
+                const errData = await res.json().catch(() => ({}));
+                throw { response: { data: errData } };
+            }
+            const data = await res.json();
+            setExplainerData(data);
         } catch (err) {
             setLookupError(err.response?.data?.detail || 'Customer ID not found or explainer data unavailable.');
         } finally {

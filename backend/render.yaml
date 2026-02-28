@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: shopperiq-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt && python ml/run_pipeline.py
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+```
+
+**2. Add `requirements.txt` in `/backend`** if not already there
+```
+fastapi
+uvicorn
+pandas
+scikit-learn
+mlxtend
+numpy
+python-multipart
+sqlalchemy
+aiosqlite
+openpyxl
+```
+
+**3. Make sure `shopping_trends.csv` is committed to git** inside `/backend/data/` — Render needs it at build time
+
+**4. Go to [render.com](https://render.com)**
+- Sign up with GitHub
+- Click **New → Web Service**
+- Connect your GitHub repo
+- Set **Root Directory** → `backend`
+- Build Command → `pip install -r requirements.txt && python ml/run_pipeline.py`
+- Start Command → `uvicorn main:app --host 0.0.0.0 --port $PORT`
+- Instance type → **Free**
+- Click **Deploy**
+
+After deploy you'll get a URL like:
+`https://shopperiq-backend.onrender.com`
+
+**Test it:** visit `https://shopperiq-backend.onrender.com/api/stats` — if you see JSON, backend is live ✅
+
+---
+
+### PART 2 — Deploy Frontend on Vercel
+
+**1. Update your `.env` in `/frontend`**
+```
+VITE_API_URL=https://shopperiq-backend.onrender.com

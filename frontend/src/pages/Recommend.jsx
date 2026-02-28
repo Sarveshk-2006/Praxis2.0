@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import axios from 'axios';
 import { Search, Info, AlertCircle, ShoppingBag, Palette, Tag } from 'lucide-react';
 import { getSegmentColor } from '../constants/segments';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const BASE = import.meta.env.VITE_API_URL;
 
 export default function Recommend() {
     const getSegmentDescription = (segment) => {
@@ -34,8 +33,9 @@ export default function Recommend() {
 
         try {
             const qs = new URLSearchParams(formData).toString();
-            const res = await axios.get(`${API_URL}/api/recommend?${qs}`);
-            setResult(res.data);
+            const res = await fetch(`${BASE}/api/recommend?${qs}`);
+            const data = await res.json();
+            setResult(data);
         } catch (err) {
             console.error(err);
             setError('Failed to fetch recommendations. Ensure backend is running.');

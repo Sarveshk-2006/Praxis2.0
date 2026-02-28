@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, Legend } from 'recharts';
 import { AlertCircle, Heart, AlertTriangle, MessageSquareQuote, Star, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import Loader from '../components/Loader';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const BASE = import.meta.env.VITE_API_URL;
 
 export default function Insights() {
     const [data, setData] = useState({
@@ -24,14 +23,14 @@ export default function Insights() {
         setError('');
         try {
             const [prodRes, discRes, insRes] = await Promise.all([
-                axios.get(`${API_URL}/api/sentiment/products`),
-                axios.get(`${API_URL}/api/sentiment/discount-correlation`),
-                axios.get(`${API_URL}/api/sentiment/insights`)
+                fetch(`${BASE}/api/sentiment/products`).then(r => r.json()),
+                fetch(`${BASE}/api/sentiment/discount-correlation`).then(r => r.json()),
+                fetch(`${BASE}/api/sentiment/insights`).then(r => r.json())
             ]);
             setData({
-                products: prodRes.data,
-                discounts: discRes.data,
-                insights: insRes.data
+                products: prodRes,
+                discounts: discRes,
+                insights: insRes
             });
         } catch (err) {
             console.error(err);
