@@ -1,0 +1,58 @@
+{
+    "Dormant Customers": {
+        "satisfaction_score": 3.211087420042644,
+        "most_loved_item": "Hat",
+        "most_complained_item": "Boots",
+        "rating_trend_by_frequency": {
+            "Annually": 3.130612244897959,
+            "Bi-Weekly": 3.074468085106383,
+            "Every 3 Months": 3.179746835443038,
+            "Fortnightly": 3.136153846153846,
+            "Monthly": 3.052892561983471,
+            "Quarterly": 3.1146153846153846,
+            "Weekly": 3.1
+        }
+    },
+    "Loyal Deal Seekers": {
+        "satisfaction_score": 3.247983870967742,
+        "most_loved_item": "Dress",
+        "most_complained_item": "T-shirt",
+        "rating_trend_by_frequency": {
+            "Annually": 3.1865248226950356,
+            "Bi-Weekly": 3.141605839416058,
+            "Every 3 Months": 3.146564885496183,
+            "Fortnightly": 3.153956834532374,
+            "Monthly": 3.1892086330935254,
+            "Quarterly": 3.1449704142011834,
+            "Weekly": 3.114705882352941
+        }
+    },
+    "Power Shoppers": {
+        "satisfaction_score": 4.449685534591195,
+        "most_loved_item": "Backpack",
+        "most_complained_item": "Coat",
+        "rating_trend_by_frequency": {
+            "Annually": 4.433928571428572,
+            "Bi-Weekly": 4.32,
+            "Every 3 Months": 4.33840579710145,
+            "Fortnightly": 4.3466165413533835,
+            "Monthly": 4.379710144927536,
+            "Quarterly": 4.403597122302158,
+            "Weekly": 4.3427672955974845
+        }
+    },
+    "Casual Browsers": {
+        "satisfaction_score": 4.399606299212598,
+        "most_loved_item": "Boots",
+        "most_complained_item": "Sneakers",
+        "rating_trend_by_frequency": {
+            "Annually": 4.315697674418605,
+            "Bi-Weekly": 4.332835820895522,
+            "Every 3 Months": 4.37452229299363,
+            "Fortnightly": 4.365,
+            "Monthly": 4.330322580645162,
+            "Quarterly": 4.4008,
+            "Weekly": 4.27218045112782
+        }
+    }
+}

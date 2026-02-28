@@ -1,0 +1,26 @@
+{
+    "Casual Browsers": {
+        "Accessories": 31.69291338582677,
+        "Clothing": 42.91338582677165,
+        "Footwear": 17.125984251968504,
+        "Outerwear": 8.267716535433072
+    },
+    "Dormant Customers": {
+        "Accessories": 29.850746268656714,
+        "Clothing": 47.54797441364605,
+        "Footwear": 14.072494669509595,
+        "Outerwear": 8.528784648187633
+    },
+    "Loyal Deal Seekers": {
+        "Accessories": 33.46774193548387,
+        "Clothing": 44.25403225806452,
+        "Footwear": 14.415322580645162,
+        "Outerwear": 7.862903225806452
+    },
+    "Power Shoppers": {
+        "Accessories": 32.075471698113205,
+        "Clothing": 43.60587002096436,
+        "Footwear": 15.723270440251572,
+        "Outerwear": 8.59538784067086
+    }
+}

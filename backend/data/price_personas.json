@@ -1,0 +1,38 @@
+{
+    "Discount Hunter": {
+        "customer_count": 1677,
+        "percentage_of_base": 43.0,
+        "avg_spend": 59.27906976744186,
+        "top_item": "Pants",
+        "segment_overlap": {
+            "Loyal Deal Seekers": 27.01252236135957,
+            "Casual Browsers": 26.71437090041741,
+            "Dormant Customers": 23.19618366129994,
+            "Power Shoppers": 23.076923076923077
+        }
+    },
+    "Quality Buyer": {
+        "customer_count": 749,
+        "percentage_of_base": 19.205128205128204,
+        "avg_spend": 87.48197596795728,
+        "top_item": "Dress",
+        "segment_overlap": {
+            "Power Shoppers": 29.10547396528705,
+            "Casual Browsers": 26.56875834445928,
+            "Dormant Customers": 24.299065420560748,
+            "Loyal Deal Seekers": 20.026702269692922
+        }
+    },
+    "Indifferent": {
+        "customer_count": 1474,
+        "percentage_of_base": 37.794871794871796,
+        "avg_spend": 46.23202170963365,
+        "top_item": "Socks",
+        "segment_overlap": {
+            "Loyal Deal Seekers": 26.39077340569878,
+            "Casual Browsers": 25.033921302578023,
+            "Dormant Customers": 24.898236092265943,
+            "Power Shoppers": 23.67706919945726
+        }
+    }
+}

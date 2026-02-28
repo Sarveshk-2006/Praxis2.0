@@ -1,0 +1,46 @@
+[
+    {
+        "segment_name": "Dormant Customers",
+        "count": 938,
+        "avg_spend": 59.652452025586356,
+        "avg_rating": 3.1153518123667374,
+        "avg_previous_purchases": 11.852878464818764,
+        "top_category": "Clothing",
+        "top_item": "Jacket",
+        "top_season": "Fall",
+        "discount_affinity": 41.47121535181237
+    },
+    {
+        "segment_name": "Loyal Deal Seekers",
+        "count": 992,
+        "avg_spend": 56.720766129032256,
+        "avg_rating": 3.1539314516129036,
+        "avg_previous_purchases": 36.33971774193548,
+        "top_category": "Clothing",
+        "top_item": "Shorts",
+        "top_season": "Winter",
+        "discount_affinity": 45.66532258064516
+    },
+    {
+        "segment_name": "Power Shoppers",
+        "count": 954,
+        "avg_spend": 62.80293501048218,
+        "avg_rating": 4.364360587002097,
+        "avg_previous_purchases": 39.25052410901468,
+        "top_category": "Clothing",
+        "top_item": "Jewelry",
+        "top_season": "Spring",
+        "discount_affinity": 40.56603773584906
+    },
+    {
+        "segment_name": "Casual Browsers",
+        "count": 1016,
+        "avg_spend": 59.98622047244095,
+        "avg_rating": 4.340846456692913,
+        "avg_previous_purchases": 14.034448818897637,
+        "top_category": "Clothing",
+        "top_item": "Sandals",
+        "top_season": "Spring",
+        "discount_affinity": 44.09448818897638
+    }
+]

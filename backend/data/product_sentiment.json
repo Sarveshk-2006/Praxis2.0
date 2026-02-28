@@ -1,0 +1,193 @@
+{
+    "matrix": {
+        "Backpack": {
+            "Delighted": 34,
+            "Neutral": 56,
+            "Satisfied": 53
+        },
+        "Belt": {
+            "Delighted": 39,
+            "Neutral": 66,
+            "Satisfied": 56
+        },
+        "Blouse": {
+            "Delighted": 31,
+            "Neutral": 75,
+            "Satisfied": 65
+        },
+        "Boots": {
+            "Delighted": 35,
+            "Neutral": 50,
+            "Satisfied": 59
+        },
+        "Coat": {
+            "Delighted": 27,
+            "Neutral": 55,
+            "Satisfied": 79
+        },
+        "Dress": {
+            "Delighted": 36,
+            "Neutral": 65,
+            "Satisfied": 65
+        },
+        "Gloves": {
+            "Delighted": 38,
+            "Neutral": 41,
+            "Satisfied": 61
+        },
+        "Handbag": {
+            "Delighted": 34,
+            "Neutral": 53,
+            "Satisfied": 66
+        },
+        "Hat": {
+            "Delighted": 32,
+            "Neutral": 54,
+            "Satisfied": 68
+        },
+        "Hoodie": {
+            "Delighted": 32,
+            "Neutral": 65,
+            "Satisfied": 54
+        },
+        "Jacket": {
+            "Delighted": 30,
+            "Neutral": 61,
+            "Satisfied": 72
+        },
+        "Jeans": {
+            "Delighted": 21,
+            "Neutral": 56,
+            "Satisfied": 47
+        },
+        "Jewelry": {
+            "Delighted": 37,
+            "Neutral": 68,
+            "Satisfied": 66
+        },
+        "Pants": {
+            "Delighted": 37,
+            "Neutral": 71,
+            "Satisfied": 63
+        },
+        "Sandals": {
+            "Delighted": 43,
+            "Neutral": 53,
+            "Satisfied": 64
+        },
+        "Scarf": {
+            "Delighted": 36,
+            "Neutral": 66,
+            "Satisfied": 55
+        },
+        "Shirt": {
+            "Delighted": 30,
+            "Neutral": 77,
+            "Satisfied": 62
+        },
+        "Shoes": {
+            "Delighted": 33,
+            "Neutral": 58,
+            "Satisfied": 59
+        },
+        "Shorts": {
+            "Delighted": 30,
+            "Neutral": 58,
+            "Satisfied": 69
+        },
+        "Skirt": {
+            "Delighted": 31,
+            "Neutral": 53,
+            "Satisfied": 74
+        },
+        "Sneakers": {
+            "Delighted": 29,
+            "Neutral": 54,
+            "Satisfied": 62
+        },
+        "Socks": {
+            "Delighted": 36,
+            "Neutral": 63,
+            "Satisfied": 60
+        },
+        "Sunglasses": {
+            "Delighted": 35,
+            "Neutral": 60,
+            "Satisfied": 66
+        },
+        "Sweater": {
+            "Delighted": 38,
+            "Neutral": 58,
+            "Satisfied": 68
+        },
+        "T-shirt": {
+            "Delighted": 35,
+            "Neutral": 54,
+            "Satisfied": 58
+        }
+    },
+    "top_delighted": [
+        {
+            "name": "Gloves",
+            "avg_rating": 3.8642857142857143,
+            "delighted_pct": 27.142857142857142,
+            "top_season": "Spring"
+        },
+        {
+            "name": "Sandals",
+            "avg_rating": 3.8412499999999996,
+            "delighted_pct": 26.875,
+            "top_season": "Fall"
+        },
+        {
+            "name": "Boots",
+            "avg_rating": 3.8125,
+            "delighted_pct": 24.305555555555554,
+            "top_season": "Spring"
+        },
+        {
+            "name": "Belt",
+            "avg_rating": 3.761490683229814,
+            "delighted_pct": 24.22360248447205,
+            "top_season": "Fall"
+        },
+        {
+            "name": "T-shirt",
+            "avg_rating": 3.7829931972789117,
+            "delighted_pct": 23.809523809523807,
+            "top_season": "Winter"
+        }
+    ],
+    "top_frustrating": [
+        {
+            "name": "Backpack",
+            "avg_rating": 3.7524475524475527,
+            "dissatisfied_pct": 0.0,
+            "top_segment": "Casual Browsers"
+        },
+        {
+            "name": "Belt",
+            "avg_rating": 3.761490683229814,
+            "dissatisfied_pct": 0.0,
+            "top_segment": "Casual Browsers"
+        },
+        {
+            "name": "Blouse",
+            "avg_rating": 3.683625730994152,
+            "dissatisfied_pct": 0.0,
+            "top_segment": "Dormant Customers"
+        },
+        {
+            "name": "Boots",
+            "avg_rating": 3.8125,
+            "dissatisfied_pct": 0.0,
+            "top_segment": "Casual Browsers"
+        },
+        {
+            "name": "Coat",
+            "avg_rating": 3.730434782608696,
+            "dissatisfied_pct": 0.0,
+            "top_segment": "Power Shoppers"
+        }
+    ]
+}

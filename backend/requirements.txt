@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pandas
+scikit-learn
+mlxtend
+numpy
+python-multipart
+sqlalchemy
+aiosqlite
+openpyxl
+certifi

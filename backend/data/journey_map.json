@@ -1,0 +1,56 @@
+{
+    "Exploring": {
+        "customer_count": 424,
+        "percentage_of_base": 10.871794871794872,
+        "top_category": "Clothing",
+        "top_item": "Jacket",
+        "avg_spend": 60.594339622641506,
+        "avg_rating": 3.7875,
+        "subscription_rate": 22.40566037735849,
+        "segment_overlap": {
+            "Dormant Customers": 56.367924528301884,
+            "Casual Browsers": 43.63207547169811
+        }
+    },
+    "Developing Loyalty": {
+        "customer_count": 1137,
+        "percentage_of_base": 29.153846153846153,
+        "top_category": "Clothing",
+        "top_item": "Belt",
+        "avg_spend": 59.591908531222515,
+        "avg_rating": 3.730255057167985,
+        "subscription_rate": 26.121372031662272,
+        "segment_overlap": {
+            "Casual Browsers": 50.48372911169745,
+            "Dormant Customers": 49.51627088830255
+        }
+    },
+    "Regular": {
+        "customer_count": 1574,
+        "percentage_of_base": 40.35897435897436,
+        "top_category": "Clothing",
+        "top_item": "Shirt",
+        "avg_spend": 59.11245235069886,
+        "avg_rating": 3.7458703939008893,
+        "subscription_rate": 28.843710292249046,
+        "segment_overlap": {
+            "Loyal Deal Seekers": 43.07496823379924,
+            "Power Shoppers": 31.95679796696315,
+            "Casual Browsers": 16.327827191867854,
+            "Dormant Customers": 8.640406607369759
+        }
+    },
+    "Power User": {
+        "customer_count": 765,
+        "percentage_of_base": 19.615384615384617,
+        "top_category": "Clothing",
+        "top_item": "Jewelry",
+        "avg_spend": 60.90196078431372,
+        "avg_rating": 3.7667973856209147,
+        "subscription_rate": 27.058823529411764,
+        "segment_overlap": {
+            "Power Shoppers": 58.954248366013076,
+            "Loyal Deal Seekers": 41.045751633986924
+        }
+    }
+}

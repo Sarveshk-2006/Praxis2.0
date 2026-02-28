@@ -1,0 +1,78 @@
+{
+    "gender": {
+        "Male": [
+            "Pants",
+            "Jewelry",
+            "Dress",
+            "Coat",
+            "Sweater"
+        ],
+        "Female": [
+            "Blouse",
+            "Shirt",
+            "Sandals",
+            "Handbag",
+            "Socks"
+        ]
+    },
+    "age_group": {
+        "18-25": [
+            "Sweater",
+            "Coat",
+            "Dress",
+            "Sneakers",
+            "Shorts"
+        ],
+        "26-35": [
+            "Shirt",
+            "Backpack",
+            "Jewelry",
+            "Socks",
+            "Sunglasses"
+        ],
+        "36-50": [
+            "Scarf",
+            "Pants",
+            "Jacket",
+            "Belt",
+            "Sandals"
+        ],
+        "51+": [
+            "Jewelry",
+            "Blouse",
+            "Handbag",
+            "Sunglasses",
+            "Shoes"
+        ]
+    },
+    "season": {
+        "Winter": [
+            "Sunglasses",
+            "Pants",
+            "Shirt",
+            "Hoodie",
+            "Jewelry"
+        ],
+        "Spring": [
+            "Sweater",
+            "Shorts",
+            "Coat",
+            "Skirt",
+            "Blouse"
+        ],
+        "Summer": [
+            "Pants",
+            "Jewelry",
+            "Dress",
+            "Shoes",
+            "Backpack"
+        ],
+        "Fall": [
+            "Jacket",
+            "Hat",
+            "Handbag",
+            "Skirt",
+            "Sandals"
+        ]
+    }
+}

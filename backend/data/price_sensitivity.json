@@ -1,0 +1,22 @@
+{
+    "Dormant Customers": {
+        "avg_spend_with_discount": 59.08997429305913,
+        "avg_spend_no_discount": 60.05100182149363,
+        "promo_code_usage_rate": 41.47121535181237
+    },
+    "Loyal Deal Seekers": {
+        "avg_spend_with_discount": 56.51876379690949,
+        "avg_spend_no_discount": 56.890538033395174,
+        "promo_code_usage_rate": 45.66532258064516
+    },
+    "Power Shoppers": {
+        "avg_spend_with_discount": 61.912144702842376,
+        "avg_spend_no_discount": 63.410934744268076,
+        "promo_code_usage_rate": 40.56603773584906
+    },
+    "Casual Browsers": {
+        "avg_spend_with_discount": 59.95982142857143,
+        "avg_spend_no_discount": 60.00704225352113,
+        "promo_code_usage_rate": 44.09448818897638
+    }
+}

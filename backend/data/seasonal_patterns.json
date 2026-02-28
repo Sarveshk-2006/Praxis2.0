@@ -1,0 +1,109 @@
+{
+    "transitions": {
+        "Dormant Customers": {
+            "Winter": {
+                "top_category": "Clothing",
+                "top_item": "Shirt",
+                "customer_count": 232,
+                "avg_spend": 60.21120689655172
+            },
+            "Spring": {
+                "top_category": "Clothing",
+                "top_item": "Sweater",
+                "customer_count": 221,
+                "avg_spend": 58.022624434389144
+            },
+            "Summer": {
+                "top_category": "Clothing",
+                "top_item": "Blouse",
+                "customer_count": 239,
+                "avg_spend": 58.37656903765691
+            },
+            "Fall": {
+                "top_category": "Clothing",
+                "top_item": "Jacket",
+                "customer_count": 246,
+                "avg_spend": 61.829268292682926
+            }
+        },
+        "Loyal Deal Seekers": {
+            "Winter": {
+                "top_category": "Clothing",
+                "top_item": "Sunglasses",
+                "customer_count": 257,
+                "avg_spend": 57.5136186770428
+            },
+            "Spring": {
+                "top_category": "Clothing",
+                "top_item": "Dress",
+                "customer_count": 247,
+                "avg_spend": 57.10121457489878
+            },
+            "Summer": {
+                "top_category": "Clothing",
+                "top_item": "Shorts",
+                "customer_count": 250,
+                "avg_spend": 54.156
+            },
+            "Fall": {
+                "top_category": "Clothing",
+                "top_item": "Scarf",
+                "customer_count": 238,
+                "avg_spend": 58.16386554621849
+            }
+        },
+        "Power Shoppers": {
+            "Winter": {
+                "top_category": "Clothing",
+                "top_item": "Sweater",
+                "customer_count": 242,
+                "avg_spend": 62.46280991735537
+            },
+            "Spring": {
+                "top_category": "Clothing",
+                "top_item": "Gloves",
+                "customer_count": 247,
+                "avg_spend": 61.73684210526316
+            },
+            "Summer": {
+                "top_category": "Clothing",
+                "top_item": "Jewelry",
+                "customer_count": 239,
+                "avg_spend": 63.21338912133891
+            },
+            "Fall": {
+                "top_category": "Clothing",
+                "top_item": "Blouse",
+                "customer_count": 226,
+                "avg_spend": 63.89823008849557
+            }
+        },
+        "Casual Browsers": {
+            "Winter": {
+                "top_category": "Clothing",
+                "top_item": "Pants",
+                "customer_count": 240,
+                "avg_spend": 61.420833333333334
+            },
+            "Spring": {
+                "top_category": "Clothing",
+                "top_item": "Sandals",
+                "customer_count": 284,
+                "avg_spend": 58.109154929577464
+            },
+            "Summer": {
+                "top_category": "Clothing",
+                "top_item": "Belt",
+                "customer_count": 227,
+                "avg_spend": 58.052863436123346
+            },
+            "Fall": {
+                "top_category": "Clothing",
+                "top_item": "Handbag",
+                "customer_count": 265,
+                "avg_spend": 62.35471698113208
+            }
+        }
+    },
+    "biggest_opportunity": "Highest revenue opportunity: Casual Browsers in Fall \u2014 avg spend $62.35, currently 6.8% of total transactions."
+}

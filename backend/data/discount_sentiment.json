@@ -1,0 +1,26 @@
+{
+    "Accessories": {
+        "avg_rating_no_discount": 3.7746054519368726,
+        "avg_rating_with_discount": 3.7609576427255984,
+        "discount_impact_difference": -0.013647809211274176,
+        "hypothesis_result": "Negative"
+    },
+    "Clothing": {
+        "avg_rating_no_discount": 3.7330019880715706,
+        "avg_rating_with_discount": 3.7095759233926127,
+        "discount_impact_difference": -0.023426064678957914,
+        "hypothesis_result": "Negative"
+    },
+    "Footwear": {
+        "avg_rating_no_discount": 3.7876470588235294,
+        "avg_rating_with_discount": 3.7945945945945945,
+        "discount_impact_difference": 0.006947535771065105,
+        "hypothesis_result": "Positive"
+    },
+    "Outerwear": {
+        "avg_rating_no_discount": 3.7738888888888886,
+        "avg_rating_with_discount": 3.713194444444445,
+        "discount_impact_difference": -0.06069444444444372,
+        "hypothesis_result": "Negative"
+    }
+}

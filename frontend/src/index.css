@@ -1,0 +1,246 @@
+:root {
+  --base: #0F0E0C;
+  --surface: #161513;
+  --surface-2: #1C1A17;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(255, 255, 255, 0.14);
+
+  --accent: #2DD4BF;
+  --accent-dim: rgba(45, 212, 191, 0.12);
+  --accent-bright: #5EEAD4;
+
+  --text-primary: #F0EDE8;
+  --text-secondary: #8A8480;
+  --text-tertiary: #4A4845;
+
+  --segment-power: #2DD4BF;
+  --segment-loyal: #818CF8;
+  --segment-casual: #FB923C;
+  --segment-dormant: #44403C;
+
+  --positive: #34D399;
+  --negative: #F87171;
+  --warning: #FBBF24;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--base);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  cursor: none;
+}
+
+/* Grain texture overlay on body */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+/* Global button override - Secondary / Ghost Style */
+button {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent) !important;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 0 !important;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+button:hover {
+  background: var(--accent);
+  color: var(--base);
+}
+
+/* Primary Action Button */
+button.btn-primary {
+  background: var(--accent) !important;
+  color: var(--base) !important;
+  border: none !important;
+}
+
+button.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Sharp card — no border radius */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 24px;
+  position: relative;
+}
+
+/* Gold accent line on card top */
+.card-accent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+}
+
+/* Mono numbers */
+.num {
+  font-family: 'DM Mono', monospace;
+}
+
+/* Section label style */
+.label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+/* Display heading */
+.heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+/* Animated underline on hover */
+.nav-link {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text-primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Number counter animation */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: countUp 0.4s ease forwards;
+}
+
+/* Horizontal divider with label */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 32px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.divider span {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+/* Page Transition */
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page {
+  animation: pageIn 0.35s ease forwards;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-hover);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}

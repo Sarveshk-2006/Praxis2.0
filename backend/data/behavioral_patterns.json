@@ -1,0 +1,74 @@
+{
+    "Dormant Customers": {
+        "payment_methods": {
+            "Credit Card": 184,
+            "Cash": 170,
+            "Debit Card": 161,
+            "PayPal": 147,
+            "Venmo": 141,
+            "Bank Transfer": 135
+        },
+        "shipping_types": {
+            "Free Shipping": 177,
+            "Next Day Air": 169,
+            "Store Pickup": 166,
+            "Express": 151,
+            "2-Day Shipping": 147,
+            "Standard": 128
+        }
+    },
+    "Loyal Deal Seekers": {
+        "payment_methods": {
+            "Venmo": 174,
+            "Debit Card": 170,
+            "PayPal": 166,
+            "Bank Transfer": 162,
+            "Cash": 161,
+            "Credit Card": 159
+        },
+        "shipping_types": {
+            "Free Shipping": 177,
+            "Store Pickup": 174,
+            "Standard": 168,
+            "2-Day Shipping": 163,
+            "Express": 155,
+            "Next Day Air": 155
+        }
+    },
+    "Power Shoppers": {
+        "payment_methods": {
+            "Credit Card": 172,
+            "Bank Transfer": 162,
+            "Venmo": 160,
+            "PayPal": 159,
+            "Cash": 154,
+            "Debit Card": 147
+        },
+        "shipping_types": {
+            "Standard": 173,
+            "Express": 171,
+            "2-Day Shipping": 167,
+            "Free Shipping": 153,
+            "Next Day Air": 149,
+            "Store Pickup": 141
+        }
+    },
+    "Casual Browsers": {
+        "payment_methods": {
+            "Credit Card": 181,
+            "Venmo": 178,
+            "Bank Transfer": 173,
+            "PayPal": 166,
+            "Cash": 163,
+            "Debit Card": 155
+        },
+        "shipping_types": {
+            "Standard": 185,
+            "Next Day Air": 175,
+            "Express": 169,
+            "Store Pickup": 169,
+            "Free Shipping": 168,
+            "2-Day Shipping": 150
+        }
+    }
+}
